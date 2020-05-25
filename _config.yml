@@ -23,7 +23,7 @@ hide_toolbar:
   github: true
 folders:
   - name: /
-    title: Isomer Guide
-    subtitle: ""
+    title: "Isomer Guide"
+    subtitle: "A guide on how to use Isomer"
     order:
       - get-started.md
