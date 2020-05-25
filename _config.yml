@@ -11,6 +11,7 @@ google_analytics: null
 fast_build: false
 offline: false
 preload_pages: true
+order: null
 styling_options:
   primary_brand_color: "#2a5fce"
   logo_path: /assets/isomer-logo.png
