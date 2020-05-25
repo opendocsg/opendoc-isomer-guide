@@ -13,7 +13,7 @@ offline: false
 preload_pages: true
 styling_options:
   primary_brand_color: "#2a5fce"
-  logo_path: /assets/logo.png
+  logo_path: /assets/isomer-logo.png
   opendoc_logo_path: /assets/images/logo-full.png
   feedback_url: https://form.gov.sg/5cee3d46138e3200109244df
   logo_url: /
@@ -26,5 +26,4 @@ folders:
     title: Isomer Guide
     subtitle: ""
     order:
-      - "get-started.md"
-    
+      - get-started.md
