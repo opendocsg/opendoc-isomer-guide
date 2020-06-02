@@ -20,11 +20,11 @@ Click on 'Continue' when the correct option is selected.
 
 You do not need to tailor experience at this moment. Click on 'skip this step'.
 
-![Screenshot of GitHub's experience tailoring page with the skip this step link on the bottom left circled](/images/github-setup/3.png)
+![Screenshot of GitHub's experience tailoring page with the skip this step link on the bottom left circled](/assets/github-setup/3.png)
 
 ### Verify your email
 
-![Screenshot of the GitHub email verification prompt](/images/github-setup/4-1.png)
+![Screenshot of the GitHub email verification prompt](/assets/github-setup/4-1.png)
 
 After signing up, go to your registered email address. You would've received an email to verify your email address.
 
