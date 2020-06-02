@@ -12,19 +12,29 @@ fast_build: false
 offline: false
 preload_pages: true
 order: null
+
 styling_options:
   primary_brand_color: "#2a5fce"
   logo_path: /assets/isomer-logo.png
   opendoc_logo_path: /assets/images/logo-full.png
   feedback_url: https://form.gov.sg/5cee3d46138e3200109244df
   logo_url: /
+  
 hide_toolbar:
   sidebar: false
   pdf: false
-  github: true
+  github: true  
+ 
 folders:
   - name: /
     title: "Isomer Guide"
     subtitle: "A guide on how to use Isomer"
     order:
       - get-started.md
+  - name: 'Tutorial'
+    title: 'Step by step tutorial on how to use isomer
+    order:
+      - tutorial.md
+      - your-first-edit.md
+  - name: 'Configuration'
+    title: 'Configuration on your isomer sites'
