@@ -32,7 +32,7 @@ folders:
     order:
       - get-started.md
   - name: 'Tutorial'
-    title: 'Step by step tutorial on how to use isomer
+    title: 'Step by step tutorial on how to use isomer'
     order:
       - tutorial.md
       - your-first-edit.md
