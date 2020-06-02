@@ -4,7 +4,7 @@ Isomer is an end-to-end managed service by GovTech which allows you to focus exc
 
 > All you have to do is to prepare the content, and Isomer "builds" a fully featured and fully compliant site.
 
-![Picture of Markdown text being turned into an Isomer site](/images/markdown-to-site.png)
+![Picture of Markdown text being turned into an Isomer site](/assets/markdown-to-site.png)
 
 This model works very well for sites which are informational in nature such as corporate sites.
 
