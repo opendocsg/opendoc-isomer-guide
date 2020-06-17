@@ -413,7 +413,7 @@ Additionally, we also have a "2 editor policy", where at least 1 other person mu
 
 ### How to create a new folder
 
-![Creating folder in your repository](/images/resources/creating-folder-in-your-repository.gif)
+![Creating folder in your repository](/assets/resources/creating-folder-in-your-repository.gif)
 
 1. Select your "Staging" Branch
 2. Go to the folder that you wish to create a new folder
@@ -435,6 +435,8 @@ On GitHub, we keep 2 separate copies of each site on 2 separate "branches" - `st
 4. Select your department Reviewers. This is located at the right side of the page
 5. Put in a title and leave a comment for your reviewer
 6. Click on "Create pull request" button
+
+Do refer to the section below for a guide on how to approve a pull request. 
 
 ## Additional resources
 
