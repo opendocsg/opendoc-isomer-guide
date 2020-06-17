@@ -124,7 +124,7 @@ That's all! Read on to find out how you can make your first edit to your site!
 
 Now that you've set up your GitHub account, let's get down to making changes! 
 
-> Do make sure that you've gotten the isomer team to add you into the relevant repository on Github before making your first edit. 
+**Make sure that you've gotten the isomer team to add you into the relevant repository on Github before making your first edit.** 
 
 First, head down to your site's GitHub repository. A repository is like a Google Drive folder where your site's content and data is stored. 
 
@@ -169,7 +169,7 @@ Hello, Isomer! This is my very first edit!
 
 The stuff between the 2 sets of triple dashes is called the *front matter*. The front matter is where you configure the title and url for each page. Most pages will only have these 2 options (`title` and `permalink`), but some pages, like the [home page](/configuration/home/overview/) and [contact us page](/configuration/contact/overview/), have more.
 
-> Do note that **permalink** refers to the url of that particular page on your site. You will notice that permalink looks like this `permalink: /my-page`. This is because it is assumed that the full url always starts with www.your-site-name.gov.sg, which is why we omit the first part and only include the part of the url after your main domain. 
+**Note that permalink refers to the url of that particular page on your site. You will notice that permalink looks like this `permalink: /my-page`. This is because it is assumed that the full url always starts with www.your-site-name.gov.sg, which is why we omit the first part and only include the part of the url after your main domain.**
 
 ![Screenshot of Isomer page with the permalink and title labelled](/assets/page-anatomy.png)
 
@@ -222,13 +222,7 @@ Headers are the big titles and subtitles on your page. For example, the headers 
 
 The above Markdown will produce:
 
-# This is a level 1 (H1) header!
-
-## This is a level 2 (H2) header!
-
-### This is a level 3 (H3) header!
-
-#### This is a level 4 (H4) header!
+[image of headers](/assets/headers.png)
 
 ### Lists
 
@@ -291,24 +285,24 @@ URLs must be wrapped in angled brackets to turn into links: <http://www.example.
 To place an image in your Markdown file, first upload the image into your `/images/` folder. Then use the following Markdown syntax:
 
 ```markdown
-![alt text - this is a description of what is in the image for people with visual impairments using screen readers](/images/isomer-logo.svg)
+![alt text - this is a description of what is in the image for people with visual impairments using screen readers](/assets/isomer-logo.svg)
 
-![just like links, you can include titles which appear when hovered](/images/isomer-logo.svg "Isomer Logo")
+![just like links, you can include titles which appear when hovered](/assets/isomer-logo.svg "Isomer Logo")
 ```
 
 The above Markdown will produce:
 
-![alt text - this is a description of what is in the image for people with visual impairments using screen readers](/images/sample-image.jpg)
+![alt text - this is a description of what is in the image for people with visual impairments using screen readers](/assets/sample-image.jpg)
 
-![just like links, you can include titles which appear when hovered](/images/sample-image.jpg "Sample Image")
+![just like links, you can include titles which appear when hovered](/assets/sample-image.jpg "Sample Image")
 
 #### Videos
 
 To embed a video on your page, simply copy the iframe code from Youtube or Vimeo after you've uploaded your video, and paste it onto your page like this
 
-![image of iframe code on youtube](/images/video.png)
+![image of iframe code on youtube](/assets/video.png)
 
-``` <iframe width="560" height="315" src="https://www.youtube.com/embed/88Ft83XvkSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> ```
+```<iframe width="560" height="315" src="https://www.youtube.com/embed/88Ft83XvkSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>```
 
 The above Markdown will show this:
 
