@@ -1,8 +1,9 @@
-# Introduction to Isomer
+# Get started
 
 Isomer is made of a few services. 
 ### Github
-This is where you **edit** your content. Most of the tutorial in this guide will cover tips and tricks on how you edit your site on Github
+This is where you **edit** your content. Most of the tutorial in this section will cover tips and tricks on how you edit your site on Github
+
 ### Netlify
 This is where your **sites are hosted**. All the content pages on Github are pulled by Netlify and it builds your site into html pages that users see on browsers. 
 You don't have to know too much about this as this part is handled by the isomer team. 
@@ -118,3 +119,198 @@ You will now see a banner notifying you 'You are now a member of Isomer!'
 ![Screenshot of the GitHub banner saying 'You are now a member of Isomer!'](/assets/github-setup/13.png)
 
 That's all! Read on to find out how you can make your first edit to your site!
+
+## 2. Making your first edit
+
+Now that you've set up your GitHub account, let's get down to making changes! 
+
+> Do make sure that you've gotten the isomer team to add you into the relevant repository on Github before making your first edit. 
+
+First, head down to your site's GitHub repository. A repository is like a Google Drive folder where your site's content and data is stored. 
+
+In this quide, we'll use the FAQ page for you to make your first edit.
+Make sure you're in the `staging` branch. If you aren't, click the dropdown menu and select `staging`.
+
+Open the `pages` folder, and click on `faq.md`. Once in, click the edit button (an icon that looks like a pencil).
+
+The content of Isomer sites are written in Markdown. You can ignore the stuff at the top of the page, between the pair of triple dashes (`---`). Type something after the second set of triple dashes. The file should now look something like this:
+
+```markdown
+---
+title: FAQ
+permalink: /faq/
+---
+Hello, Isomer! This is my very first edit!
+```
+
+Scroll to the bottom of the page, and add a simple note of the changes you've made under 'Update faq.md'. You can also add more details in the subsequent large text box. **Make sure the option 'Commit directly to the `staging` branch.' is selected, and click 'Commit changes'.**
+
+Wait for about a few minutes, then head to your site's staging site (which is provided by the isomer team, it typically has this format https://yoursite-staging.netlify.app. On the staging site, head to the FAQ page. 
+
+Congratulations! You have just made your very first edit to an Isomer site!
+
+The moment a commit is made on GitHub, GitHub sends the updated content of your site to [Netlify](https://www.netlify.com/) that we use to build Isomer sites. Netlify then downloads the central Isomer theme, weaves your content into the theme, building a complete site. This build process usually take less than a minute for most Isomer sites, but larger Isomer sites can take up to 5 minutes.
+
+You might also remember that you were asked to make sure that you are in the `staging` branch of the repository. Isomer sites will always have at least 2 branches - `staging` and `master`. The `staging` branch is where you can make edits freely without affecting your live site. Your changes can be previewed on the staging URL, which is also separate from your live site.
+
+When you're happy with your changes and want to push them to your live site, open a pull request to the `master` branch. A pull request is essentially a request to update the content of the `master` branch to be in sync with the `staging` branch. To prevent defacement or other security incidents, we have instituted a policy where your pull request must be approved by at least 1 other user who can edit your site. We'll cover more about this in the later part of the tutorial.
+
+## 3. Creating a new page
+
+The next step after editing your first page is to create a new page! As you might recall, each Isomer Markdown file look something like this:
+
+```markdown
+---
+title: FAQ
+permalink: /faq/
+---
+Hello, Isomer! This is my very first edit!
+```
+
+The stuff between the 2 sets of triple dashes is called the *front matter*. The front matter is where you configure the title and url for each page. Most pages will only have these 2 options (`title` and `permalink`), but some pages, like the [home page](/configuration/home/overview/) and [contact us page](/configuration/contact/overview/), have more.
+
+> Do note that **permalink** refers to the url of that particular page on your site. You will notice that permalink looks like this `permalink: /my-page`. This is because it is assumed that the full url always starts with www.your-site-name.gov.sg, which is why we omit the first part and only include the part of the url after your main domain. 
+
+![Screenshot of Isomer page with the permalink and title labelled](/assets/page-anatomy.png)
+
+Now that you know about the front matter, let's get started creating your new page! 
+
+Head to the staging branch, and go into the `pages` folder. Click the 'Create new file' button (it's to the upper right hand corner). Give a file a name, such as `myfirstpage.md`. Note that your page is in Markdown format, hence the file name must end in `.md`. GitHub won't be able to automatically add that for you!
+
+![Creating a new file in your repository](/assets/resources/creating-a-new-file-in-your-repository.gif)
+
+Now that you have named the file, you're free to add your content. Feel free to copy and paste the Markdown above, or write your own! If your site already has a page with the permalink `/faq/`, remember to change the permalink to something else! One of the 2 pages will not be accessible if they have the same permalinks.
+
+Once you're done, enter a commit message, make sure the 'Commit directly to the `staging` branch.' option is selected, and hit the green commit button. Just as before, your changes are now accessible on the staging site! (you might need to enter the permalink directly into the address bar)
+
+## What is markdown?
+
+Markdown is a way to style text on the web. All the pages on isomer are in markdown format (as you may have noticed by the .md extension on all your pages). You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is simply regular text with a few non-alphabetic characters thrown in, like `#` or `*`.
+
+For a quick, interactive introduction to Markdown, you can try out the Markdown tutorial at <https://commonmark.org/help/tutorial/>{:target="_blank"}. 
+
+
+### Quick cheatsheet on Markdown formatting
+
+This is intended as a quick reference and showcase, to aid you as you draft your site's pages. If you're looking for something that isn't covered here, we encourage you to refer to other more comprehensive Markdown guides on the internet. If you still feel you need more assistance, feel free to reach out to us for help through Slack or email.
+
+[StackEdit](https://stackedit.io/app) is free online editor that you can use while you draft your pages.
+
+#### Text
+
+```markdown
+This is some normal text. *This sentence is in italics.* This **word** is in bold.
+```
+
+The above Markdown will produce:
+
+This is some normal text. *This sentence is in italics.* This **word** is in bold.
+
+#### Headers
+
+Headers are the big titles and subtitles on your page. For example, the headers you have seen so far on this page are "Text" and "Headers". Headers come in levels, with a level 1 header (aka `H1`) the biggest level usually used only for page titles.
+
+```markdown
+# This is a level 1 (H1) header!
+
+## This is a level 2 (H2) header!
+
+### This is a level 3 (H3) header!
+
+#### This is a level 4 (H4) header!
+```
+
+The above Markdown will produce:
+
+# This is a level 1 (H1) header!
+
+## This is a level 2 (H2) header!
+
+### This is a level 3 (H3) header!
+
+#### This is a level 4 (H4) header!
+
+### Lists
+
+```markdown
+1. First ordered list item
+2. Another item
+  * Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+  1. Ordered sub-list
+4. And another item.
+
+   You can have properly indented paragraphs within list items. Notice the blank line above, and the 3 leading spaces which align the raw Markdown.
+
+* Use asterisks for unordered lists, aka bullet points
+```
+
+The above Markdown will produce:
+
+1. First ordered list item
+2. Another item
+  * Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+  1. Ordered sub-list
+4. And another item.
+
+   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces which align the raw Markdown.
+
+* Use asterisks for unordered lists, aka bullet points
+
+#### Links
+
+Links come in several flavours:
+
+```markdown
+[I'm a link within the site](/configuration/navbar/overview/)
+
+[I'm an link to an external site](https://www.google.com)
+
+[I'm an link with title - hover your mouse over me!](https://www.google.com "Google's Homepage")
+
+[I'm an link to a file](/assets/sample.pdf)
+
+URLs must be wrapped in angled brackets to turn into links: <http://www.example.com>
+```
+
+The above Markdown will produce:
+
+[I'm a link within the site](/configuration/navbar/overview/)
+
+[I'm an link to an external site](https://www.google.com)
+
+[I'm an link with title - hover your mouse over me!](https://www.google.com "Google's Homepage")
+
+[I'm an link to a file](/assets/sample.pdf)
+
+URLs must be wrapped in angled brackets to turn into links: <http://www.example.com>
+
+#### Images
+
+To place an image in your Markdown file, first upload the image into your `/images/` folder. Then use the following Markdown syntax:
+
+```markdown
+![alt text - this is a description of what is in the image for people with visual impairments using screen readers](/images/isomer-logo.svg)
+
+![just like links, you can include titles which appear when hovered](/images/isomer-logo.svg "Isomer Logo")
+```
+
+The above Markdown will produce:
+
+![alt text - this is a description of what is in the image for people with visual impairments using screen readers](/images/sample-image.jpg)
+
+![just like links, you can include titles which appear when hovered](/images/sample-image.jpg "Sample Image")
+
+#### Videos
+
+To embed a video on your page, simply copy the iframe code from Youtube or Vimeo after you've uploaded your video, and paste it onto your page like this
+
+![image of iframe code on youtube](/images/video.png)
+
+``` <iframe width="560" height="315" src="https://www.youtube.com/embed/88Ft83XvkSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> ```
+
+The above Markdown will show this:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/88Ft83XvkSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
