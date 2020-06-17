@@ -31,10 +31,6 @@ folders:
     subtitle: "A guide on how to use Isomer"
     order:
       - get-started.md
-  - name: 'Tutorial'
-    title: 'Step by step tutorial on how to use isomer'
-    order:
-      - tutorial.md
-      - your-first-edit.md
-  - name: 'Configuration'
-    title: 'Configuration on your isomer sites'
+      - introduction.md
+      - updates.md
+      - faq.md
