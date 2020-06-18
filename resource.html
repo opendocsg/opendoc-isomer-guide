@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>More about Github, Markdown</title>
+  <meta name="description" content="More about Github, Markdown
+
+Github
+
+Over the course of the past few pages, you’ve created a GitHub ">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:image" content="/opendoc-isomer-guide/site.styling_options.logo_path">
+
+  <link rel="icon" href="/opendoc-isomer-guide/assets/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/opendoc-isomer-guide/assets/styles/normalize.css">
+  <link rel="stylesheet" href="/opendoc-isomer-guide/assets/styles/main.css">
+  <link rel="alternate" type="application/rss+xml" title="Isomer Guide"
+    href="/opendoc-isomer-guide/feed.xml">
+  <!-- Polyfill for corejs functions, promises, array.includes, array.from, etc. -->
+  <script src="/opendoc-isomer-guide/assets/vendor/babel-polyfill.min.js"></script>
+  <!-- Polyfill for dom functions -->
+  <script src="/opendoc-isomer-guide/assets/vendor/dom4.js" charset="utf-8"></script>
+  <!-- Polyfill for fetch API -->
+  <script src="/opendoc-isomer-guide/assets/vendor/fetch.umd.js"></script>
+  <!-- Priority Queue library for promises -->
+  <script src="/opendoc-isomer-guide/assets/js/pqueue.js"></script>
+  <!-- Helper functions that should be preloaded go here -->
+  <script src="/opendoc-isomer-guide/assets/js/helpers.js"></script></head>
+
+<body>
+  <div class="site-header no-print">
+    <div class="site-header-left">
+      <a href="/opendoc-isomer-guide/">
+        <h1 class="site-header-text">
+          Isomer Guide
+        </h1>
+      </a>
+      <span class="site-last-updated">
+        LAST UPDATED: 18 JUNE 2020
+      <span>
+    </div>
+    <div class="site-header-right"><a id="contact-us" href="https://form.gov.sg/5cee3d46138e3200109244df" target="_blank">
+        <span>Contact Us</span>
+      </a>
+      <a href="/" class="desktop">
+        <img class="agency-logo" src="/opendoc-isomer-guide/assets/isomer-logo.png">
+      </a>
+      <a href="/opendoc-isomer-guide/" class="mobile">
+        <img class="agency-logo" src="/opendoc-isomer-guide/assets/isomer-logo.png">
+      </a>
+      <a class="search-btn top-mobile-btn">
+        <img src="/opendoc-isomer-guide/assets/images/search-icon-dark.svg">
+      </a>
+    </div>
+  </div>
+
+  <nav class="site-nav no-print">
+    <div class="nav-header no-print">
+      <div class="search-box">
+        <div class="search-icon-container search-btn">
+          <img class="search-icon mobile" src="/opendoc-isomer-guide/assets/images/search-icon-dark.svg"/>
+          <img class="search-icon" src="/opendoc-isomer-guide/assets/images/search-icon-white.svg"/>
+          <img class="close-icon" src="/opendoc-isomer-guide/assets/images/close.svg"/>
+        </div>
+        <span class="search-filter hidden">Isomer Guide</span>
+        <div class="search-input-container">
+          <p class="search-header">search entire site</p>
+          <input id="search-box" placeholder="Search titles or keywords" type="text" />
+        </div>
+        <label class="clear-button">
+          <svg class="clear-icon" viewBox="0 0 18 18" width="18" height="18">
+            <path d="M2.42755 1L17.0331 15.60554l-1.41423 1.4142L1 2.38402"></path>
+            <path d="M1 15.51932L15.51933 1l1.4142 1.4142L2.2978 17.0331"></path>
+          </svg>
+        </label>
+      </div>
+      <div class="search-results">
+      </div>
+    </div>
+    <div class="nav-main no-print">
+
+    
+
+
+<section class="navigation">
+
+
+
+
+    
+    
+    
+    <section class="contents lonely" id="toc_/">
+    
+    
+
+
+    
+        
+    
+        
+    
+        
+            
+
+    
+        
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+
+
+    
+        
+            
+        
+            
+                
+                
+    
+        
+            
+        
+            
+        
+            
+                
+                
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+    
+        
+            
+                
+                
+    
+
+
+
+<ul class="table-of-contents">  <li class="nav-branch"><a href="/opendoc-isomer-guide/get-started.html" class="nav-link"><span class="directory-item"> Welcome to Isomer! </span></a></li>  <li class="nav-branch"><a href="/opendoc-isomer-guide/introduction.html" class="nav-link"><span class="directory-item"> Get started </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-isomer-guide/introduction.html#1-create-a-github-account" class="nav-link"><span class="directory-item"> 1. Create a Github account </span></a></li>      <li class="nav-branch"><a href="/opendoc-isomer-guide/introduction.html#2-making-your-first-edit" class="nav-link"><span class="directory-item"> 2. Making your first edit </span></a></li>      <li class="nav-branch"><a href="/opendoc-isomer-guide/introduction.html#3-creating-a-new-page" class="nav-link"><span class="directory-item"> 3. Creating a new page </span></a></li>      <li class="nav-branch"><a href="/opendoc-isomer-guide/introduction.html#4-publish-a-page-to-live" class="nav-link"><span class="directory-item"> 4. Publish a page to live </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-isomer-guide/resource.html" class="nav-link"><span class="directory-item"> More about Github, Markdown </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-isomer-guide/resource.html#github" class="nav-link"><span class="directory-item"> Github </span></a></li>      <li class="nav-branch"><a href="/opendoc-isomer-guide/resource.html#what-is-markdown" class="nav-link"><span class="directory-item"> What is markdown? </span></a></li>      <li class="nav-branch"><a href="/opendoc-isomer-guide/resource.html#what-is-front-matter" class="nav-link"><span class="directory-item"> What is front matter? </span></a></li>      <li class="nav-branch"><a href="/opendoc-isomer-guide/resource.html#additional-resources" class="nav-link"><span class="directory-item"> Additional resources </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-isomer-guide/updates.html" class="nav-link"><span class="directory-item"> Updates </span></a>    <ul>      <li class="nav-branch"><a href="/opendoc-isomer-guide/updates.html#16-june-2020-creation-of-this-page" class="nav-link"><span class="directory-item"> 16 June 2020 Creation of this page </span></a></li>    </ul>  </li>  <li class="nav-branch"><a href="/opendoc-isomer-guide/faq.html" class="nav-link"><span class="directory-item"> Frequently Asked Questions </span></a></li></ul>
+    </section>
+
+</section></div>
+  </nav><div id="index-div">
+  <header class="doc-header no-print">
+    <div class=description-container>
+      <h2 id="document-title">
+        Isomer Guide
+      </h2>
+      <div>
+        <div id="document-subtitle">
+          A guide on how to use Isomer
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="toolbar-container no-print">
+    <label for="menu-toggle" class="toolbar-button" id="menu-toggle-btn">
+            <input type="checkbox" id="menu-toggle" hidden>
+            <img class="btn-icon" src="/opendoc-isomer-guide/assets/images/sidebar.svg">
+            <img class="btn-icon hover" src="/opendoc-isomer-guide/assets/images/sidebar-hover.svg">
+            <img class="mobile-btn-icon " src="/opendoc-isomer-guide/assets/images/menu.svg">
+            <img class="mobile-btn-icon close" src="/opendoc-isomer-guide/assets/images/x-mobile.svg">
+            <div class="tooltip">Toggle Sidebar</div>
+        </label><div class="toolbar-button print-btn">
+            <img class="btn-icon" src="/opendoc-isomer-guide/assets/images/pdf.svg">
+            <img class="btn-icon hover" src="/opendoc-isomer-guide/assets/images/pdf-hover.svg">
+            <div class="tooltip">Save as PDF</div>
+        </div></div>
+
+<div class="fab no-print" id="fab">
+    <div class="overlay" id="fab-overlay"></div>
+    <div class="back-to-top hidden" id="back-to-top" href="#">
+        <img class="btn-icon" src="/opendoc-isomer-guide/assets/images/chevron-up-white.svg">
+    </div>
+    <div class="trigger" id="fab-trigger">
+        <img class="btn-icon" src="/opendoc-isomer-guide/assets/images/vertical-dots.svg">
+        <img class="btn-icon close" src="/opendoc-isomer-guide/assets/images/x-mobile.svg">
+    </div>
+    <div class="actions"><a class="action feedback-btn" href="https://form.gov.sg/5cee3d46138e3200109244df" target="_blank">
+            <img class="btn-icon" src="/opendoc-isomer-guide/assets/images/feedback.svg">
+            <div class="tooltip">Feedback</div>
+        </a>
+        <div class="action share-btn">
+            <img class="btn-icon" src="/opendoc-isomer-guide/assets/images/share.svg">
+            <div class="tooltip">Share</div>
+        </div>
+        <div class="action print-btn">
+                <img class="btn-icon" src="/opendoc-isomer-guide/assets/images/pdf.svg">
+                <div class="tooltip">Save as PDF</div>
+            </div></div>
+</div>
+  </div>
+
+  <main class="site-main" id="main-content" aria-label="Content"><h1 id="more-about-github-markdown">More about Github, Markdown</h1>
+
+<h2 id="github">Github</h2>
+
+<p>Over the course of the past few pages, you’ve created a GitHub account, and have been editing your pages on GitHub. Now, we’ll cover what GitHub is and more importantly, how to use it, in more detail.</p>
+
+<p>Each Isomer site has a GitHub repository. A repository is like a dedicated GitHub folder for your site.</p>
+
+<p><img src="/opendoc-isomer-guide/assets/resources/github.PNG" alt="Screenshot of a GitHub Isomer respository" /></p>
+
+<p>GitHub is an online code storage service that many programmers use. It is perfect for storing and collaborating edits to plain text files, such as Markdown, but it supports multimedia files such as Word documents and pictures too. For plain text files, it even tracks the full history of each line, so you can easily go back to find out the author even years after it was written! This makes it perfect for government websites where tracability is important, and also acts as a further line of defence against defacement attacks.</p>
+
+<p>Additionally, we also have a “2 editor policy”, where at least 1 other person must review and approve when the live production site is edited.</p>
+
+<p><strong>IMPORTANT guidelines to follow to manage your repository:</strong></p>
+
+<ul>
+  <li>Always upload document such as pdf, doc, excel into the files folder</li>
+  <li>Always upload images such as png, jpg, gif into the images folder</li>
+  <li>Do not upload filename or permalinks that contain spaces. Always replace the spaces with dash (-)</li>
+</ul>
+
+<h3 id="how-to-create-a-file-on-github">How to create a file on Github</h3>
+
+<p><img src="/opendoc-isomer-guide/assets/resources/creating-a-new-file-in-your-repository.gif" alt="Creating a new file in your repository" /></p>
+
+<ol>
+  <li>Select your “Staging” Branch</li>
+  <li>Go to the folder that you wish to create a new folder</li>
+  <li>In your repository, click on “Create new file” button</li>
+  <li>Under the “Name your file…” section, put in your file name. Remember to add the file extension (e.g. <code class="language-plaintext highlighter-rouge">.md</code> for Markdown, <code class="language-plaintext highlighter-rouge">.yml</code> for YAML)</li>
+  <li>Type or paste the content of the file. Don’t forget the front matter if it is a Markdown file</li>
+  <li>Click on “Commit new file” button</li>
+</ol>
+
+<h3 id="how-to-upload-a-file-on-github">How to upload a file on Github</h3>
+
+<p><img src="/opendoc-isomer-guide/assets/resources/how-to-upload-file-to-your-repository.gif" alt="How to upload a file to your repository" /></p>
+
+<blockquote>
+  <p>NOTE: Always replace spaces in file names with dashes (-)</p>
+</blockquote>
+
+<ol>
+  <li>Select your “Staging” Branch</li>
+  <li>In your repository, go to folder that you wish to upload your file</li>
+  <li>Click on “Upload files” button</li>
+  <li>Choose your file. Supported file types include <code class="language-plaintext highlighter-rouge">pdf</code>, <code class="language-plaintext highlighter-rouge">docx</code>, <code class="language-plaintext highlighter-rouge">jpg</code>, <code class="language-plaintext highlighter-rouge">png</code>, <code class="language-plaintext highlighter-rouge">gif</code>, and of course, <code class="language-plaintext highlighter-rouge">md</code> and <code class="language-plaintext highlighter-rouge">yml</code></li>
+  <li>Click on “Commit changes” button</li>
+</ol>
+
+<h3 id="how-to-edit-a-file-or-a-page">How to edit a file (or a page)</h3>
+
+<p><img src="/opendoc-isomer-guide/assets/resources/editing-file-to-your-repository.gif" alt="Editing a file in your repository" /></p>
+
+<ol>
+  <li>Select your “Staging” Branch</li>
+  <li>In your repository, go to file that you wish to edit</li>
+  <li>Click on “edit” pencil button</li>
+  <li>Edit your file content or name</li>
+  <li>Click on “Commit changes” button</li>
+</ol>
+
+<h3 id="how-to-delete-a-filepageimage">How to delete a file/page/image</h3>
+
+<p><img src="/opendoc-isomer-guide/assets/resources/deleting-file-to-your-repository.gif" alt="Deleting a file in your repository" /></p>
+
+<ol>
+  <li>Select your “Staging” Branch</li>
+  <li>In your repository, go to file that you wish to delete</li>
+  <li>Click on “delete” trash button</li>
+  <li>Click on “Commit changes” button</li>
+</ol>
+
+<h3 id="how-to-create-a-new-folder">How to create a new folder</h3>
+
+<p><img src="/opendoc-isomer-guide/assets/resources/creating-folder-in-your-repository.gif" alt="Creating folder in your repository" /></p>
+
+<ol>
+  <li>Select your “Staging” Branch</li>
+  <li>Go to the folder that you wish to create a new folder</li>
+  <li>In your repository, click on “Create new file” button</li>
+  <li>Under the “Name your file…” section, create the directory by specifying folder-name/ignore.md</li>
+  <li>Click on “Commit new file” button</li>
+</ol>
+
+<blockquote>
+  <p>Remember to delete <code class="language-plaintext highlighter-rouge">ignore.md</code> after you upload or create at least 1 other file</p>
+</blockquote>
+
+<h2 id="what-is-markdown">What is markdown?</h2>
+
+<p>Markdown is a way to style text on the web. All the pages on isomer are in markdown format (as you may have noticed by the .md extension on all your pages). You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is simply regular text with a few non-alphabetic characters thrown in, like <code class="language-plaintext highlighter-rouge">#</code> or <code class="language-plaintext highlighter-rouge">*</code>.</p>
+
+<p>For a quick, interactive introduction to Markdown, you can try out the Markdown tutorial at <a href="https://commonmark.org/help/tutorial/" target="_blank">https://commonmark.org/help/tutorial/</a>.</p>
+
+<h3 id="quick-cheatsheet-on-markdown-formatting">Quick cheatsheet on Markdown formatting</h3>
+
+<p>This is intended as a quick reference and showcase, to aid you as you draft your site’s pages. If you’re looking for something that isn’t covered here, we encourage you to refer to other more comprehensive Markdown guides on the internet. If you still feel you need more assistance, feel free to reach out to us for help through Slack or email.</p>
+
+<p><a href="https://stackedit.io/app">StackEdit</a> is free online editor that you can use while you draft your pages.</p>
+
+<h4 id="text">Text</h4>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is some normal text. <span class="ge">*This sentence is in italics.*</span> This <span class="gs">**word**</span> is in bold.
+</code></pre></div></div>
+
+<p>The above Markdown will produce:</p>
+
+<p>This is some normal text. <em>This sentence is in italics.</em> This <strong>word</strong> is in bold.</p>
+
+<h4 id="headers">Headers</h4>
+
+<p>Headers are the big titles and subtitles on your page. For example, the headers you have seen so far on this page are “Text” and “Headers”. Headers come in levels, with a level 1 header (aka <code class="language-plaintext highlighter-rouge">H1</code>) the biggest level usually used only for page titles.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># This is a level 1 (H1) header!</span>
+
+<span class="gu">## This is a level 2 (H2) header!</span>
+
+<span class="gu">### This is a level 3 (H3) header!</span>
+
+<span class="gu">#### This is a level 4 (H4) header!</span>
+</code></pre></div></div>
+
+<p>The above Markdown will produce:</p>
+
+<p><a href="/opendoc-isomer-guide/assets/headers.png">image of headers</a></p>
+
+<h3 id="lists">Lists</h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> First ordered list item
+<span class="p">2.</span> Another item
+<span class="p">  *</span> Unordered sub-list. 
+<span class="p">1.</span> Actual numbers don't matter, just that it's a number
+<span class="p">  1.</span> Ordered sub-list
+<span class="p">4.</span> And another item.
+
+   You can have properly indented paragraphs within list items. Notice the blank line above, and the 3 leading spaces which align the raw Markdown.
+<span class="p">
+*</span> Use asterisks for unordered lists, aka bullet points
+</code></pre></div></div>
+
+<p>The above Markdown will produce:</p>
+
+<ol>
+  <li>First ordered list item</li>
+  <li>Another item
+    <ul>
+      <li>Unordered sub-list.</li>
+    </ul>
+  </li>
+  <li>Actual numbers don’t matter, just that it’s a number</li>
+  <li>Ordered sub-list</li>
+  <li>
+    <p>And another item.</p>
+
+    <p>You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces which align the raw Markdown.</p>
+  </li>
+</ol>
+
+<ul>
+  <li>Use asterisks for unordered lists, aka bullet points</li>
+</ul>
+
+<h4 id="links">Links</h4>
+
+<p>Links come in several flavours:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">I'm a link within the site</span><span class="p">](</span><span class="sx">/configuration/navbar/overview/</span><span class="p">)</span>
+
+<span class="p">[</span><span class="nv">I'm an link to an external site</span><span class="p">](</span><span class="sx">https://www.google.com</span><span class="p">)</span>
+
+<span class="p">[</span><span class="nv">I'm an link with title - hover your mouse over me!</span><span class="p">](</span><span class="sx">https://www.google.com</span> <span class="nn">"Google's Homepage"</span><span class="p">)</span>
+
+<span class="p">[</span><span class="nv">I'm an link to a file</span><span class="p">](</span><span class="sx">/assets/sample.pdf</span><span class="p">)</span>
+
+URLs must be wrapped in angled brackets to turn into links: <span class="nv">&lt;http://www.example.com&gt;</span>
+</code></pre></div></div>
+
+<p>The above Markdown will produce:</p>
+
+<p><a href="/configuration/navbar/overview/">I’m a link within the site</a></p>
+
+<p><a href="https://www.google.com">I’m an link to an external site</a></p>
+
+<p><a href="https://www.google.com" title="Google's Homepage">I’m an link with title - hover your mouse over me!</a></p>
+
+<p><a href="/assets/sample.pdf">I’m an link to a file</a></p>
+
+<p>URLs must be wrapped in angled brackets to turn into links: <a href="http://www.example.com">http://www.example.com</a></p>
+
+<h4 id="images">Images</h4>
+
+<p>To place an image in your Markdown file, first upload the image into your <code class="language-plaintext highlighter-rouge">/images/</code> folder. Then use the following Markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">alt text - this is a description of what is in the image for people with visual impairments using screen readers</span><span class="p">](</span><span class="sx">/opendoc-isomer-guide/assets/isomer-logo.svg</span><span class="p">)</span>
+
+<span class="p">![</span><span class="nv">just like links, you can include titles which appear when hovered</span><span class="p">](</span><span class="sx">/assets/isomer-logo.svg</span> <span class="nn">"Isomer Logo"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The above Markdown will produce:</p>
+
+<p><img src="/opendoc-isomer-guide/assets/sample-image.jpg" alt="alt text - this is a description of what is in the image for people with visual impairments using screen readers" /></p>
+
+<p><img src="/assets/sample-image.jpg" alt="just like links, you can include titles which appear when hovered" title="Sample Image" /></p>
+
+<h4 id="videos">Videos</h4>
+
+<p>To embed a video on your page, simply copy the iframe code from Youtube or Vimeo after you’ve uploaded your video, and paste it onto your page like this</p>
+
+<p><img src="/opendoc-isomer-guide/assets/video.png" alt="image of iframe code on youtube" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/88Ft83XvkSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code></p>
+
+<p>The above Markdown will show this:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/88Ft83XvkSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="what-is-front-matter">What is front matter?</h2>
+
+<p>As covered in the earlier section, the front matter is the stuff enclosed in 3 dashes at the top of the page. The front matter is used to configure the settings specific to that page, such as the title and permalink. Certain pages like the homepage and contact us page have more configuration options, such as the content in the hero banner or the contact numbers displayed.</p>
+
+<p>The way the front matter is structured is called <a href="https://en.wikipedia.org/wiki/YAML" target="blank">YAML</a>. You can think of it as a language used to specify data in a way that can be read and understoof by Isomer.</p>
+
+<h3 id="front-matter-syntax">Front matter syntax</h3>
+
+<p>ike all languages, YAML has its own ‘grammar’, known as syntax. Syntax are a list of rules that you have to follow in order for the YAML to be properly understood. There are quite a number of rules in YAML, but we’ll just cover what you need to know.</p>
+
+<p>The most important thing in YAML is the spacing. Certain lines have extra spaces at the front. See this sample extract from a home page’s front matter:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">resources</span><span class="pi">:</span>
+  <span class="na">title</span><span class="pi">:</span> <span class="s">Media</span>
+  <span class="na">subtitle</span><span class="pi">:</span> <span class="s">Learn more</span>
+  <span class="na">button</span><span class="pi">:</span> <span class="s">Contact Us</span>
+</code></pre></div></div>
+
+<p>In this example, there is a <code class="language-plaintext highlighter-rouge">resources</code> section. The <code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">subtitle</code>, and <code class="language-plaintext highlighter-rouge">button</code> properties each have 2 spaces at the front. This means that the 3 properties are describing the <code class="language-plaintext highlighter-rouge">resources</code> section, instead of the whole page.</p>
+
+<p>The next thing you should know about YAML are lists. Here’s an extract from a dropdown menu:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">options</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Option A</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/page-a/</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Option B</span> 
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/page-b/</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Option C</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/page-c/</span>
+</code></pre></div></div>
+
+<p>A dropdown menu will have multiple options. This is when we need to use a list. Each item in a list is specified by adding a dash (<code class="language-plaintext highlighter-rouge">-</code>). Note that <code class="language-plaintext highlighter-rouge">url</code>, which is part of the option together with <code class="language-plaintext highlighter-rouge">title</code>, must be vertically aligned with <code class="language-plaintext highlighter-rouge">title</code>.</p>
+
+<p>This is more or less what you need to know for YAML. Don’t worry if you don’t know the specific options to use for each page - you can always refer to the <a href="/configuration/navbar/overview/">configuration options</a> for the details. All you need right now is to understand when the extra spaces are needed, and when lists are needed.</p>
+
+<p>As a final note, if you have special characters like <code class="language-plaintext highlighter-rouge">#</code> in your YAML, it is a good idea to wrap the entire text in double quotes, like so:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">#hashtags"</span>
+</code></pre></div></div>
+
+<h2 id="additional-resources">Additional resources</h2>
+
+<h4 id="basic-concept-about-isomer-github-markdown"><strong>Basic concept about Isomer, Github, Markdown</strong></h4>
+<ul>
+  <li><a href="/files/Editor Isomer Training.pdf" target="_blank">Training Guide for Editor of Content</a></li>
+  <li><a href="/files/Reviewer Training Guide.pdf" target="_blank">Training Guide for Reviewer of Content</a>
+<!--- * [Training Guide for Administrator of Github Repository](/files/Administrator Isomer Training.pdf){:target="_blank"} --></li>
+</ul>
+
+<h4 id="how-to-setup-your-github-account"><strong>How to setup your Github account</strong></h4>
+<ul>
+  <li><a href="/files/Github Account Setup Guide.pdf" target="_blank">Github Account Setup Guide</a></li>
+</ul>
+
+
+  </main>
+  <div class="site-branding no-print">
+    Powered by <a href="https://opendoc.sg"><img src="/opendoc-isomer-guide/assets/images/opendoc-logo-full.svg"></a>
+  </div>
+
+  <script src="/opendoc-isomer-guide/assets/vendor/jump.min.js" charset="utf-8"></script>
+  <script src="/opendoc-isomer-guide/assets/vendor/headroom.min.js" charset="utf-8"></script>
+  <script src="/opendoc-isomer-guide/assets/vendor/mark.min.js" charset="utf-8"></script>
+  <script src="/opendoc-isomer-guide/assets/vendor/web-share-shim.bundle.min.js"></script>
+  <script src="/opendoc-isomer-guide/assets/js/toolbar.js"></script>
+  <script src="/opendoc-isomer-guide/assets/js/page-index.js"></script>
+  <script src="/opendoc-isomer-guide/assets/js/pre-loader.js"></script>
+  <script src="/opendoc-isomer-guide/assets/js/lunr.min.js"></script>
+  <script src="/opendoc-isomer-guide/assets/js/search.js"></script>
+  <script src="/opendoc-isomer-guide/assets/js/header.js"></script>
+  <script src="/opendoc-isomer-guide/assets/js/navigation.js"></script>
+</body>
+
+</html>
