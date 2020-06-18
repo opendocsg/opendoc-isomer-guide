@@ -32,5 +32,7 @@ folders:
     order:
       - get-started.md
       - introduction.md
+      - configuration.md
+      - resource.md
       - updates.md
       - faq.md
